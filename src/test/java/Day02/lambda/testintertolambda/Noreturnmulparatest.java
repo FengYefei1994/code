@@ -1,13 +1,13 @@
 package Day02.lambda.testintertolambda;
 
-import Day02.lambda.intertolambda.NoReturnOneParam;
+import Day02.lambda.intertolambda.Noreturnmulpara;
 
 public class Noreturnmulparatest {
     public static void main(String[] args) {
-        NoReturnOneParam noReturnOneParam = (int a) -> {
-            System.out.println("NoReturnOneParam param:" + a);
+        Noreturnmulpara noReturnMultiParam = (int a, int b) -> {
+            System.out.println("NoReturnMultiParam param:" + "{" + a +"," + + b +"}");
         };
-        noReturnOneParam.method(6);
+        noReturnMultiParam.method(6, 8);
     }
 }
 
